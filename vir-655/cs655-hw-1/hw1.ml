@@ -64,7 +64,7 @@ let rec eval_bexp (b:bexp) (sigma:state) : t = match b with
   | LE (a0,a1) ->
     let e0 = eval_aexp a0 sigma in 
     let e1 = eval_aexp a1 sigma in 
-    e0 < e1
+    e0 <= e1
   | Not (b0) -> 
     let e0 = eval_bexp b0 sigma in
     not e0 
@@ -90,9 +90,14 @@ let rec eval_com (c:com) (sigma:state) : state = match c with
   | If (b,c0,c1) ->
     if (eval_bexp b sigma) then eval_com c0 sigma
     else eval_com c1 sigma
-  | While (b,c) -> 
-    if eval_bexp b sigma then eval_com c (eval_com c sigma)
+  | While (b,c') -> 
+    if eval_bexp b sigma then eval_com c (eval_com c' sigma)
     else sigma
-  | _ -> 
+  | Print (a)-> Printf.printf "%d" (eval_aexp a sigma);sigma
+  | Let (loc,aexp,com) -> let value = eval_aexp aexp sigma in
+			  Hashtbl.add sigma loc value;sigma;
+			  eval_com com sigma;
+			  Hashtbl.remove sigma loc;sigma;
+  | _ ->
     (* you must put real code here *)
     Printf.printf "Warning! Com not yet implemented!\n" ; sigma 
