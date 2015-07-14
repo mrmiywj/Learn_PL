@@ -1,0 +1,9 @@
+
+let pair = fn x1 : int => fn x2 : int =>
+              fn which : int -> int -> int => which x1 x2 in
+    let fst = fn x1 : int => fn x2 : int => x1 in
+        let snd = fn x1 : int => fn x2 : int => x2 in
+            (pair (pair 10 20 fst) (pair 1 2 snd) fst) - (pair 5 3 snd)
+        end
+    end
+end;

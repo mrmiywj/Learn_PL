@@ -60,7 +60,6 @@ module OrderedReString =
     let compare = compare
   end
 module ReStringSet = Set.Make(OrderedReString)
-
 type stringset = ReStringSet.t 
 
 (* this returns an empty set of strings *) 
