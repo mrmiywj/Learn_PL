@@ -76,9 +76,7 @@ let rec eval_bexp (b:bexp) (sigma:state) : t = match b with
     let e0 = eval_bexp b0 sigma in 
     let e1 = eval_bexp b1 sigma in
     e0 || e1
-  | _ -> 
-    (* you must put real code here *) 
-    Printf.printf "Warning! BExp not yet implemented!\n" ; true 
+
 
 (* Evaluates a com given the state 'sigma'. *) 
 let rec eval_com (c:com) (sigma:state) : state = match c with
@@ -98,6 +96,3 @@ let rec eval_com (c:com) (sigma:state) : state = match c with
 			  Hashtbl.add sigma loc value;sigma;
 			  eval_com com sigma;
 			  Hashtbl.remove sigma loc;sigma;
-  | _ ->
-    (* you must put real code here *)
-    Printf.printf "Warning! Com not yet implemented!\n" ; sigma 
