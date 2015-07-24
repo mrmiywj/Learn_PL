@@ -3,6 +3,7 @@ type token =
   | STR of (string)
   | ID of (string)
   | FID of (string)
+  | TID of (string)
   | CLASS
   | IF
   | THEN

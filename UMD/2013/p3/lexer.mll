@@ -25,6 +25,7 @@ rule token = parse
 | ['0'-'9']+ as lxm { INT(int_of_string lxm) }
 | ['A'-'Z''a'-'z''+''-''*''/''_''!''?']+ as lxm { ID(lxm) }
 | '@'['A'-'Z''a'-'z''+''-''*''/''_''!''?']+ as lxm { FID(lxm) }
+| ':'['A'-'Z''a'-'z''+''-''*''/''_''!''?']+ as lxm { TID(lxm) }
 | eof { EOF }
 | _ as lxm { Printf.printf "Illegal character %c" lxm; failwith "Bad input" }
 

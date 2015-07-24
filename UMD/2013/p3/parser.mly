@@ -3,7 +3,7 @@
 %}
 
 %token <int> INT
-%token <string> STR ID FID
+%token <string> STR ID FID TID
 %token CLASS IF THEN ELSE DEF END NEW NIL
 %token LT LP RP COMMA SEMI DOT EQ EOF SELF BEGIN INHERITS
 %start main
@@ -26,11 +26,11 @@ clss:
   { [] }
 | cls clss { $1::$2 }
 cls:
-  CLASS ID INHERITS ID BEGIN meths END {
+  CLASS ID INHERITS ID BEGIN fields meths END {
     { cls_name = $2;
       cls_super = $4;
-      cls_fields = []; (* TODO *)
-      cls_meths = $6 }
+      cls_fields = $6; (*// TODO *)
+      cls_meths = $7 }
   }
 
 meths:
@@ -38,13 +38,33 @@ meths:
 | meth meths { $1::$2 }
 ;
 meth:
-  DEF ID LP ids RP BEGIN exprs END {
-    { meth_name = $2;
-      meth_ret = TClass "Bot"; (* TODO *)
-      meth_args = (List.map (fun x -> (x, TClass "Bot", None, None))) $4; (* TODO *)
-      meth_locals = []; (* TODO *)
-      meth_body = $7 }
+  DEF ID ID LP idandtyps RP localtyps BEGIN exprs END {
+    { meth_name = $3;
+      meth_ret = TClass $2; (* //TODO *)
+      meth_args = (List.map (fun x -> (fst x, snd x, None, None))) $5; (* //TODO *)
+      meth_locals = $7; (* //TODO *)
+      meth_body = $9 }
   }
+;
+typ:
+  TID {TClass $1}
+;
+fields:
+  {[]}
+| field fields {$1::$2}
+;
+field:
+  FID typ{($1,$2)}
+;
+idandtyps:
+  {[]}
+| ID typ {[($1,$2)]}
+| ID typ COMMA idandtyps {($1,$2)::$4}
+;
+localtyps:
+  {[]}
+| ID typ {[($1,$2)]}
+| ID typ localtyps {($1,$2) :: $3}
 ;
 ids:
   { [] }
@@ -68,6 +88,7 @@ expr:
 | expr DOT ID LP params RP { EInvoke($1, $3, $5) }
 | NEW ID { ENew $2 }
 | LP exprs RP { $2 }
+| LP expr typ RP { ECast($2,$3)}
 ;
 params:
   { [] }
