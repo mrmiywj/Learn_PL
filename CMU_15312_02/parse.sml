@@ -107,7 +107,7 @@ struct
               val (t1, s) = parse_type (next s)
               val s = match L.RPAREN s
               val s = match L.COLON s
-              val (t2, s) = parse_type (next s)
+          val (t2, s) = parse_type (next s)
               val s = match L.IS s
               val (e, s) = parse_exp s
           in
