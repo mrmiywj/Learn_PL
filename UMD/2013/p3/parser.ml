@@ -295,7 +295,7 @@ let yyact = [|
 # 41 "parser.mly"
                                                       (
     { meth_name = _3;
-      meth_ret = TClass _2; (* //TODO *)
+      meth_ret = TClass( ":" ^ _2); (* //TODO *)
       meth_args = (List.map (fun x -> (fst x, snd x, None, None))) _5; (* //TODO *)
       meth_locals = _7; (* //TODO *)
       meth_body = _9 }

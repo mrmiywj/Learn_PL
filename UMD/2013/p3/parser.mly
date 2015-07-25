@@ -40,7 +40,7 @@ meths:
 meth:
   DEF ID ID LP idandtyps RP localtyps BEGIN exprs END {
     { meth_name = $3;
-      meth_ret = TClass $2; (* //TODO *)
+      meth_ret = TClass( ":" ^ $2); (* //TODO *)
       meth_args = (List.map (fun x -> (fst x, snd x, None, None))) $5; (* //TODO *)
       meth_locals = $7; (* //TODO *)
       meth_body = $9 }
