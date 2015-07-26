@@ -95,3 +95,35 @@ let defined_class ({prog_clss=clss;prog_main=main}:prog) (c:string) = match c wi
   | "String" -> true
   | "Bot" -> true
   | _ -> List.exists (fun x -> (x.cls_name = c)) clss 
+
+let rec lca_class ({prog_clss=clss;prog_main=main}:prog) (c1:string) (c2:string) = match (c1,c2) with
+  | (_,"Object") -> "Object"
+  | ("Object",_) -> "Object"
+  | (c,"Bot") -> "Bot"
+  | ("Bot",c) -> "Bot"
+  | (a,b) ->let class1 = List.find (fun x -> (x.cls_name = c1)) clss in
+            let ancestor1 = class1.cls_super in
+            let class2 = List.find (fun x -> (x.cls_name = c2)) clss in
+            let ancestor2 = class2.cls_super in
+            if (ancestor1 = ancestor2) then ancestor1
+             else lca_class {prog_clss=clss;prog_main=main} ancestor1 ancestor2
+
+let fatherof ({prog_clss=clss;prog_main=main}:prog) (t:typ) = match t with
+  | TClass tname -> let cl = List.find (fun x -> (x.cls_name = tname)) clss in
+                    (TClass cl.cls_super)
+
+let rec castatob ({prog_clss=clss;prog_main=main}:prog) (t1:typ) (t2:typ) =
+  if (t1 = t2) then true
+  else if (t1 = TClass "Object") then false
+  else castatob {prog_clss=clss;prog_main=main} (fatherof {prog_clss=clss;prog_main=main} t1) t2
+
+let rec castbtoa ({prog_clss=clss;prog_main=main}:prog) (t1:typ) (t2:typ) =
+  if (t1 = t2) then true
+  else if (t2 = TClass "Object") then false
+  else castbtoa {prog_clss=clss;prog_main=main} t1 (fatherof {prog_clss=clss;prog_main=main} t2)
+
+let castable ({prog_clss=clss;prog_main=main}:prog) (t1:typ) (t2:typ) =
+  if (t1 = t2) then true
+  else (castatob  {prog_clss=clss;prog_main=main} t1 t2) || (castbtoa {prog_clss=clss;prog_main=main} t1 t2)
+
+
