@@ -86,4 +86,12 @@ and print_program ({prog_clss=clss; prog_main=main}:prog) = match clss with
 
 let tc_prog (p:prog) =
   (* change this! *)
+
   print_program p
+
+let defined_class ({prog_clss=clss;prog_main=main}:prog) (c:string) = match c with
+  | "Object" -> true
+  | "Integer" -> true
+  | "String" -> true
+  | "Bot" -> true
+  | _ -> List.exists (fun x -> (x.cls_name = c)) clss 
