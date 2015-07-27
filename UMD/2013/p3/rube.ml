@@ -126,4 +126,27 @@ let castable ({prog_clss=clss;prog_main=main}:prog) (t1:typ) (t2:typ) =
   if (t1 = t2) then true
   else (castatob  {prog_clss=clss;prog_main=main} t1 t2) || (castbtoa {prog_clss=clss;prog_main=main} t1 t2)
 
+let no_builtin_redef ({prog_clss=clss;prog_main=main}:prog) =
+  let tmp = List.map (fun x -> ((x.cls_name != "Object") && (x.cls_name != "String") && (x.cls_name != "Integer") && (x.cls_name != "Bot"))) clss in
+  List.fold_left (fun a b -> a && b) true tmp
 
+let fstoffour (a,_,_,_) = a
+
+let sndoffour (_,b,_,_) = b
+
+let rec lookup_meth ({prog_clss=clss;prog_main=main} : prog) (c:string) (m:string) = match (c,m) with
+    ("Object","equal?") -> ([TClass "Object"],TClass "Object")
+  | ("Object","to_s") -> ([TClass ""],TClass "String")
+  | ("Object","print") -> ([TClass ""],TClass "Bot")
+  | ("String","+") -> ([TClass "String"],TClass "String")
+  | ("Integer","+") -> ([TClass "Integer"],TClass "Integer")
+  | ("Integer","-") -> ([TClass "Integer"],TClass "Integer")
+  | ("Integer","*") -> ([TClass "Integer"],TClass "Integer")
+  | ("Integer","/") -> ([TClass "Integer"],TClass "Integer")
+  | ("Bot",_) -> raise Not_found
+  | _ -> let theclss = List.find (fun x -> (x.cls_name = c)) clss in
+         if (List.exists (fun x -> (x.meth_name = m)) theclss.cls_meths) then
+           let themeth = List.find (fun x -> (x.meth_name = m)) theclss.cls_meths in
+                                   let args = List.fold_left (fun a b -> (sndoffour b) :: a) [] themeth.meth_args  in
+                                   (args, themeth.meth_ret)
+         else lookup_meth {prog_clss=clss;prog_main=main} theclss.cls_super m 
