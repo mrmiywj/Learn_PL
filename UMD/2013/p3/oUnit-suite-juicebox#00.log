@@ -1,0 +1,55 @@
+2015-07-28T11:26:11+00:00 juicebox#00 I: Runner: processes
+2015-07-28T11:26:11+00:00 juicebox#00 I: Chooser: simple
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration suite_name = "suite"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration cache_filename = "/home/juicebox/Documents/Learn_PL/UMD/2013/p3/oUnit-$(suite_name).cache"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration display = "true"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration results_style_1_X = "false"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration verbose = "false"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration health_check_interval = "1."
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration testdata_dir = "none"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration chooser = "simple"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration output_html_dir = "none"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration processes_kill_period = "5."
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration runner = "processes"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration shards = "1"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration processes_grace_period = "5."
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration log_encoding = "utf-8"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration output_junit_file = "none"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Configuration output_file = "/home/juicebox/Documents/Learn_PL/UMD/2013/p3/oUnit-$(suite_name)-$(shard_id).log"
+2015-07-28T11:26:11+00:00 juicebox#00 I: Using 1 workers maximum.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Starting worker number juicebox#01.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Worker juicebox#01 started.
+2015-07-28T11:26:11+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
+2015-07-28T11:26:11+00:00 juicebox#01 I: Start test suite:0:test1.
+2015-07-28T11:26:11+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
+2015-07-28T11:26:11+00:00 juicebox#01 I: Test suite:0:test1 is successful.
+2015-07-28T11:26:11+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
+2015-07-28T11:26:11+00:00 juicebox#01 I: End test suite:0:test1.
+2015-07-28T11:26:11+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Still 1 tests running : suite:1:test2.
+2015-07-28T11:26:11+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
+2015-07-28T11:26:11+00:00 juicebox#01 I: Start test suite:1:test2.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Still 1 tests running : suite:1:test2.
+2015-07-28T11:26:11+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
+2015-07-28T11:26:11+00:00 juicebox#01 I: Test suite:1:test2 is successful.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Still 1 tests running : suite:1:test2.
+2015-07-28T11:26:11+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
+2015-07-28T11:26:11+00:00 juicebox#01 I: End test suite:1:test2.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Still 1 tests running : suite:1:test2.
+2015-07-28T11:26:11+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
+2015-07-28T11:26:11+00:00 juicebox#00 I: 0 tests running: .
+2015-07-28T11:26:11+00:00 juicebox#00 I: Worker juicebox#01 has ended.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Used 1 worker during test execution.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Run 2 tests with shard juicebox#01.
+2015-07-28T11:26:11+00:00 juicebox#00 I: ==============
+2015-07-28T11:26:11+00:00 juicebox#00 I: Summary:
+2015-07-28T11:26:11+00:00 juicebox#00 I: Test suite:1:test2 is successful.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Test suite:0:test1 is successful.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Ran: 2 tests in: 0.12 seconds.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Cases: 2.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Tried: 2.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Errors: 0.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Failures: 0.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Skip: 0.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Todo: 0.
+2015-07-28T11:26:11+00:00 juicebox#00 I: Timeout: 0.
