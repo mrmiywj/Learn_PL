@@ -1,11 +1,10 @@
-open Rube
-open Ounit2
+open OUnit2
 
-let test1 "test1"= assert_equal 1 (fstoffour (1,2,3,4))
+let test1 test_ctxt = assert_equal 1 (Rube.fstoffour (1,2,3,4))
 
 let suit =
   "suite">:::
-    ["test1" >:: test]
+    ["test1" >:: test1]
 ;;
 
 let () =
