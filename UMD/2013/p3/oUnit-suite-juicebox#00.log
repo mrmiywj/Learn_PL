@@ -1,107 +1,107 @@
-2015-07-28T18:40:06+00:00 juicebox#00 I: Runner: processes
-2015-07-28T18:40:06+00:00 juicebox#00 I: Chooser: simple
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration suite_name = "suite"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration cache_filename = "/home/juicebox/Documents/Learn_PL/UMD/2013/p3/oUnit-$(suite_name).cache"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration display = "true"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration results_style_1_X = "false"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration verbose = "false"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration health_check_interval = "1."
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration testdata_dir = "none"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration chooser = "simple"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration output_html_dir = "none"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration processes_kill_period = "5."
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration runner = "processes"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration shards = "1"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration processes_grace_period = "5."
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration log_encoding = "utf-8"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration output_junit_file = "none"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Configuration output_file = "/home/juicebox/Documents/Learn_PL/UMD/2013/p3/oUnit-$(suite_name)-$(shard_id).log"
-2015-07-28T18:40:06+00:00 juicebox#00 I: Using 1 workers maximum.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Starting worker number juicebox#01.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Worker juicebox#01 started.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
-2015-07-28T18:40:06+00:00 juicebox#01 I: Start test suite:0:test1.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
-2015-07-28T18:40:06+00:00 juicebox#01 I: Test suite:0:test1 is successful.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
-2015-07-28T18:40:06+00:00 juicebox#01 I: End test suite:0:test1.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
-2015-07-28T18:40:06+00:00 juicebox#01 I: Start test suite:1:test2.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
-2015-07-28T18:40:06+00:00 juicebox#01 I: Test suite:1:test2 is successful.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
-2015-07-28T18:40:06+00:00 juicebox#01 I: End test suite:1:test2.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:2:test3.
-2015-07-28T18:40:06+00:00 juicebox#01 I: Start test suite:2:test3.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:2:test3.
-2015-07-28T18:40:06+00:00 juicebox#01 I: Test suite:2:test3 is successful.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:2:test3.
-2015-07-28T18:40:06+00:00 juicebox#01 I: End test suite:2:test3.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:2:test3.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:3:test4.
-2015-07-28T18:40:06+00:00 juicebox#01 I: Start test suite:3:test4.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:3:test4.
-2015-07-28T18:40:06+00:00 juicebox#01 I: Test suite:3:test4 is successful.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:3:test4.
-2015-07-28T18:40:06+00:00 juicebox#01 I: End test suite:3:test4.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:3:test4.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:4:test5.
-2015-07-28T18:40:06+00:00 juicebox#01 I: Start test suite:4:test5.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:4:test5.
-2015-07-28T18:40:06+00:00 juicebox#01 E: Test suite:4:test5 has failed.
-2015-07-28T18:40:06+00:00 juicebox#01 E: not equal in test suite:4:test5.
-2015-07-28T18:40:06+00:00 juicebox#01 E: Raised at file "src/oUnitAssert.ml", line 45, characters 8-27
-2015-07-28T18:40:06+00:00 juicebox#01 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
-2015-07-28T18:40:06+00:00 juicebox#01 E: 
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:4:test5.
-2015-07-28T18:40:06+00:00 juicebox#01 I: End test suite:4:test5.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:4:test5.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Still 1 tests running : suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#01 I: Start test suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Still 1 tests running : suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#01 E: Test suite:5:test6 exited with an error.
-2015-07-28T18:40:06+00:00 juicebox#01 E: Not_found in test suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#01 E: Raised at file "list.ml", line 179, characters 16-25
-2015-07-28T18:40:06+00:00 juicebox#01 E: Called from file "rube.ml", line 106, characters 25-68
-2015-07-28T18:40:06+00:00 juicebox#01 E: Called from file "test.ml", line 36, characters 44-90
-2015-07-28T18:40:06+00:00 juicebox#01 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
-2015-07-28T18:40:06+00:00 juicebox#01 E: 
-2015-07-28T18:40:06+00:00 juicebox#00 I: Still 1 tests running : suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#01 I: End test suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Still 1 tests running : suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 1 tests running: suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#00 I: 0 tests running: .
-2015-07-28T18:40:06+00:00 juicebox#00 I: Worker juicebox#01 has ended.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Used 1 worker during test execution.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Run 6 tests with shard juicebox#01.
-2015-07-28T18:40:06+00:00 juicebox#00 I: ==============
-2015-07-28T18:40:06+00:00 juicebox#00 I: Summary:
-2015-07-28T18:40:06+00:00 juicebox#00 E: Test suite:5:test6 exited with an error.
-2015-07-28T18:40:06+00:00 juicebox#00 E: Not_found in test suite:5:test6.
-2015-07-28T18:40:06+00:00 juicebox#00 E: Raised at file "list.ml", line 179, characters 16-25
-2015-07-28T18:40:06+00:00 juicebox#00 E: Called from file "rube.ml", line 106, characters 25-68
-2015-07-28T18:40:06+00:00 juicebox#00 E: Called from file "test.ml", line 36, characters 44-90
-2015-07-28T18:40:06+00:00 juicebox#00 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
-2015-07-28T18:40:06+00:00 juicebox#00 E: 
-2015-07-28T18:40:06+00:00 juicebox#00 E: Test suite:4:test5 has failed.
-2015-07-28T18:40:06+00:00 juicebox#00 E: not equal in test suite:4:test5.
-2015-07-28T18:40:06+00:00 juicebox#00 E: Raised at file "src/oUnitAssert.ml", line 45, characters 8-27
-2015-07-28T18:40:06+00:00 juicebox#00 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
-2015-07-28T18:40:06+00:00 juicebox#00 E: 
-2015-07-28T18:40:06+00:00 juicebox#00 I: Test suite:3:test4 is successful.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Test suite:2:test3 is successful.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Test suite:1:test2 is successful.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Test suite:0:test1 is successful.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Ran: 6 tests in: 0.17 seconds.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Cases: 6.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Tried: 6.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Errors: 1.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Failures: 1.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Skip: 0.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Todo: 0.
-2015-07-28T18:40:06+00:00 juicebox#00 I: Timeout: 0.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Runner: processes
+2015-08-02T12:44:41+00:00 juicebox#00 I: Chooser: simple
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration suite_name = "suite"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration cache_filename = "/home/juicebox/Documents/Learn_PL/UMD/2013/p3/oUnit-$(suite_name).cache"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration display = "true"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration results_style_1_X = "false"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration verbose = "false"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration health_check_interval = "1."
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration testdata_dir = "none"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration chooser = "simple"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration output_html_dir = "none"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration processes_kill_period = "5."
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration runner = "processes"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration shards = "1"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration processes_grace_period = "5."
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration log_encoding = "utf-8"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration output_junit_file = "none"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Configuration output_file = "/home/juicebox/Documents/Learn_PL/UMD/2013/p3/oUnit-$(suite_name)-$(shard_id).log"
+2015-08-02T12:44:41+00:00 juicebox#00 I: Using 1 workers maximum.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Starting worker number juicebox#01.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Worker juicebox#01 started.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
+2015-08-02T12:44:41+00:00 juicebox#01 I: Start test suite:0:test1.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
+2015-08-02T12:44:41+00:00 juicebox#01 I: Test suite:0:test1 is successful.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
+2015-08-02T12:44:41+00:00 juicebox#01 I: End test suite:0:test1.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:0:test1.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
+2015-08-02T12:44:41+00:00 juicebox#01 I: Start test suite:1:test2.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
+2015-08-02T12:44:41+00:00 juicebox#01 I: Test suite:1:test2 is successful.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
+2015-08-02T12:44:41+00:00 juicebox#01 I: End test suite:1:test2.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:1:test2.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:2:test3.
+2015-08-02T12:44:41+00:00 juicebox#01 I: Start test suite:2:test3.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:2:test3.
+2015-08-02T12:44:41+00:00 juicebox#01 I: Test suite:2:test3 is successful.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:2:test3.
+2015-08-02T12:44:41+00:00 juicebox#01 I: End test suite:2:test3.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:2:test3.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:3:test4.
+2015-08-02T12:44:41+00:00 juicebox#01 I: Start test suite:3:test4.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:3:test4.
+2015-08-02T12:44:41+00:00 juicebox#01 I: Test suite:3:test4 is successful.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:3:test4.
+2015-08-02T12:44:41+00:00 juicebox#01 I: End test suite:3:test4.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:3:test4.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:4:test5.
+2015-08-02T12:44:41+00:00 juicebox#01 I: Start test suite:4:test5.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:4:test5.
+2015-08-02T12:44:41+00:00 juicebox#01 E: Test suite:4:test5 has failed.
+2015-08-02T12:44:41+00:00 juicebox#01 E: not equal in test suite:4:test5.
+2015-08-02T12:44:41+00:00 juicebox#01 E: Raised at file "src/oUnitAssert.ml", line 45, characters 8-27
+2015-08-02T12:44:41+00:00 juicebox#01 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2015-08-02T12:44:41+00:00 juicebox#01 E: 
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:4:test5.
+2015-08-02T12:44:41+00:00 juicebox#01 I: End test suite:4:test5.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:4:test5.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Still 1 tests running : suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#01 I: Start test suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Still 1 tests running : suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#01 E: Test suite:5:test6 exited with an error.
+2015-08-02T12:44:41+00:00 juicebox#01 E: Not_found in test suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#01 E: Raised at file "list.ml", line 179, characters 16-25
+2015-08-02T12:44:41+00:00 juicebox#01 E: Called from file "rube.ml", line 106, characters 25-68
+2015-08-02T12:44:41+00:00 juicebox#01 E: Called from file "test.ml", line 36, characters 44-90
+2015-08-02T12:44:41+00:00 juicebox#01 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2015-08-02T12:44:41+00:00 juicebox#01 E: 
+2015-08-02T12:44:41+00:00 juicebox#00 I: Still 1 tests running : suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#01 I: End test suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Still 1 tests running : suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 1 tests running: suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#00 I: 0 tests running: .
+2015-08-02T12:44:41+00:00 juicebox#00 I: Worker juicebox#01 has ended.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Used 1 worker during test execution.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Run 6 tests with shard juicebox#01.
+2015-08-02T12:44:41+00:00 juicebox#00 I: ==============
+2015-08-02T12:44:41+00:00 juicebox#00 I: Summary:
+2015-08-02T12:44:41+00:00 juicebox#00 E: Test suite:5:test6 exited with an error.
+2015-08-02T12:44:41+00:00 juicebox#00 E: Not_found in test suite:5:test6.
+2015-08-02T12:44:41+00:00 juicebox#00 E: Raised at file "list.ml", line 179, characters 16-25
+2015-08-02T12:44:41+00:00 juicebox#00 E: Called from file "rube.ml", line 106, characters 25-68
+2015-08-02T12:44:41+00:00 juicebox#00 E: Called from file "test.ml", line 36, characters 44-90
+2015-08-02T12:44:41+00:00 juicebox#00 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2015-08-02T12:44:41+00:00 juicebox#00 E: 
+2015-08-02T12:44:41+00:00 juicebox#00 E: Test suite:4:test5 has failed.
+2015-08-02T12:44:41+00:00 juicebox#00 E: not equal in test suite:4:test5.
+2015-08-02T12:44:41+00:00 juicebox#00 E: Raised at file "src/oUnitAssert.ml", line 45, characters 8-27
+2015-08-02T12:44:41+00:00 juicebox#00 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2015-08-02T12:44:41+00:00 juicebox#00 E: 
+2015-08-02T12:44:41+00:00 juicebox#00 I: Test suite:3:test4 is successful.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Test suite:2:test3 is successful.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Test suite:1:test2 is successful.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Test suite:0:test1 is successful.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Ran: 6 tests in: 0.20 seconds.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Cases: 6.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Tried: 6.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Errors: 1.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Failures: 1.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Skip: 0.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Todo: 0.
+2015-08-02T12:44:41+00:00 juicebox#00 I: Timeout: 0.

@@ -144,6 +144,7 @@ let rec lookup_meth ({prog_clss=clss;prog_main=main} : prog) (c:string) (m:strin
   | ("Integer","*") -> ([TClass "Integer"],TClass "Integer")
   | ("Integer","/") -> ([TClass "Integer"],TClass "Integer")
   | ("Bot",_) -> raise Not_found
+  | ("Object",_) -> raise Not_found
   | _ -> let theclss = List.find (fun x -> (x.cls_name = c)) clss in
          if (List.exists (fun x -> (x.meth_name = m)) theclss.cls_meths) then
            let themeth = List.find (fun x -> (x.meth_name = m)) theclss.cls_meths in
